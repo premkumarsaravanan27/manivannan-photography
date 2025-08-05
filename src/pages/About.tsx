@@ -57,7 +57,7 @@ const About = () => {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-black/5 -z-10"></div>
-          </motion.div>
+          </motion.div>  
 
           {/* Bio Content */}
           <motion.div
