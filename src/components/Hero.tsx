@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="flex items-center justify-center mb-6">
           <Camera size={48} className="text-amber-400 mr-4" />
           <div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-2">LUMINA</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-2">MANIVANNAN</h1>
             <p className="text-xl md:text-2xl font-light tracking-wide">PHOTOGRAPHY</p>
           </div>
         </div>
