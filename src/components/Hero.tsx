@@ -1,5 +1,7 @@
 import React from 'react';
 import { Camera, ArrowDown } from 'lucide-react';
+import homePic from '../images/homepic.jpg'
+
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -11,14 +13,15 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div 
+       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1600')`
+          backgroundImage:`url(${homePic})`
         }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
+
       
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
         <div className="flex items-center justify-center mb-6">

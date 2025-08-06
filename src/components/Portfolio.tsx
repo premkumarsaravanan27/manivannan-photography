@@ -5,18 +5,18 @@ const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const categories = ['All', 'Weddings', 'Portraits', 'Events', 'Nature'];
+  const categories = ['All', 'Baby photoshoot', 'Weddings', 'Pre & post wedding',];
   
   const images = [
-    { id: 1, category: 'Weddings', src: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800', alt: 'Wedding ceremony' },
-    { id: 2, category: 'Portraits', src: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800', alt: 'Portrait session' },
-    { id: 3, category: 'Weddings', src: 'https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&w=800', alt: 'Wedding couple' },
-    { id: 4, category: 'Events', src: 'https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800', alt: 'Event photography' },
-    { id: 5, category: 'Nature', src: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=800', alt: 'Nature landscape' },
-    { id: 6, category: 'Portraits', src: 'https://images.pexels.com/photos/3785104/pexels-photo-3785104.jpeg?auto=compress&cs=tinysrgb&w=800', alt: 'Family portrait' },
-    { id: 7, category: 'Weddings', src: 'https://images.pexels.com/photos/1729931/pexels-photo-1729931.jpeg?auto=compress&cs=tinysrgb&w=800', alt: 'Wedding details' },
-    { id: 8, category: 'Events', src: 'https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=800', alt: 'Corporate event' },
-    { id: 9, category: 'Nature', src: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=800', alt: 'Mountain landscape' }
+    { id: 1, src: img1, category: 'Pre & post wedding', alt: 'Pre & post wedding photography' },
+    { id: 2, src: img2, category: 'Pre & post wedding', alt: 'Pre & post wedding photography' },
+    { id: 3, src: img3, category: 'Pre & post wedding', alt:'Pre & post wedding photography' },
+    { id: 4, src: img4, category: 'Weddings', alt: 'Weddings photos' },
+    { id: 5, src: img5, category: 'Weddings', alt: 'Weddings photos' },
+    { id: 6, src: img6, category: 'Weddings', alt: 'Wedding photos' },
+    { id: 7, src: img7, category: 'Baby photoshoot', alt: 'keylight photography' },
+    { id: 8, src: img8, category: 'Baby photoshoot', alt: 'keylight photography' },
+    { id: 9, src: img9, category: 'Baby photoshoot', alt: 'keylight photography' }
   ];
 
   const filteredImages = selectedCategory === 'All' 
@@ -34,7 +34,7 @@ const Portfolio = () => {
           </p>
         </div>
 
-        {/* Category Filter */}
+      
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category) => (
             <button
@@ -51,7 +51,6 @@ const Portfolio = () => {
           ))}
         </div>
 
-        {/* Image Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredImages.map((image) => (
             <div
@@ -74,7 +73,7 @@ const Portfolio = () => {
         </div>
       </div>
 
-      {/* Lightbox */}
+      
       {selectedImage && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
           <div className="relative max-w-4xl w-full">

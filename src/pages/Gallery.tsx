@@ -6,13 +6,17 @@ import img2 from "../images/gallery2.jpg";
 import img3 from "../images/gallery3.jpg";
 import img4 from "../images/gallery4.jpg";
 import img5 from "../images/gallery5.jpg";
-import img6 from "../images/gallery6.jpg"
+import img6 from "../images/gallery6.jpg";
+import img7 from "../images/gallery7.jpg";
+import img8 from "../images/gallery8.jpg";
+import img9 from "../images/gallery9.jpg"
+
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const categories = ['All', 'Birthdays', 'Weddings', 'Pre & post wedding',];
+  const categories = ['All', 'Baby photoshoot', 'Weddings', 'Pre & post wedding',];
 
   const images = [
     { id: 1, src: img1, category: 'Pre & post wedding', alt: 'Pre & post wedding photography' },
@@ -21,9 +25,9 @@ const Gallery = () => {
     { id: 4, src: img4, category: 'Weddings', alt: 'Weddings photos' },
     { id: 5, src: img5, category: 'Weddings', alt: 'Weddings photos' },
     { id: 6, src: img6, category: 'Weddings', alt: 'Wedding photos' },
-    { id: 7, src: 'https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=800', category: 'Street', alt: 'Urban photography' },
-    { id: 8, src: 'https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&w=800', category: 'Portraits', alt: 'Fashion portrait' },
-    { id: 9, src: 'https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=800', category: 'Landscapes', alt: 'Nature landscape' }
+    { id: 7, src: img7, category: 'Baby photoshoot', alt: 'keylight photography' },
+    { id: 8, src: img8, category: 'Baby photoshoot', alt: 'keylight photography' },
+    { id: 9, src: img9, category: 'Baby photoshoot', alt: 'keylight photography' }
   ];
 
   const filteredImages = selectedCategory === 'All' 
