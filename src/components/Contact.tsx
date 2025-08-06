@@ -153,14 +153,14 @@ const Contact = () => {
                   <Phone className="w-6 h-6 text-amber-600 mr-4 mt-1" />
                   <div>
                     <p className="font-medium text-stone-800">Phone</p>
-                    <p className="text-stone-600">(555) 123-4567</p>
+                    <p className="text-stone-600">+91 8610548497</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <MapPin className="w-6 h-6 text-amber-600 mr-4 mt-1" />
                   <div>
                     <p className="font-medium text-stone-800">Location</p>
-                    <p className="text-stone-600">Los Angeles, CA<br />Available for travel worldwide</p>
+                    <p className="text-stone-600">Arani,TN <br />Available for travel worldwide</p>
                   </div>
                 </div>
               </div>
@@ -190,7 +190,7 @@ const Contact = () => {
                 </a>
               </div>
               <p className="text-stone-600 mt-4">
-                Follow @luminaphoto for daily inspiration and behind-the-scenes content
+                Follow @stories_by_mani for daily inspiration and behind-the-scenes content
               </p>
             </div>
           </div>
