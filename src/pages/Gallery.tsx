@@ -3,7 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import img1 from "../images/gallery1.jpg";
 import img2 from "../images/gallery2.jpg";
-import img3 from "../images/gallery3.jpg"
+import img3 from "../images/gallery3.jpg";
+import img4 from "../images/gallery4.jpg";
+import img5 from "../images/gallery5.jpg";
+import img6 from "../images/gallery6.jpg"
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -15,9 +18,9 @@ const Gallery = () => {
     { id: 1, src: img1, category: 'Pre & post wedding', alt: 'Pre & post wedding photography' },
     { id: 2, src: img2, category: 'Pre & post wedding', alt: 'Pre & post wedding photography' },
     { id: 3, src: img3, category: 'Pre & post wedding', alt:'Pre & post wedding photography' },
-    { id: 4, src: 'https://images.pexels.com/photos/3785104/pexels-photo-3785104.jpeg?auto=compress&cs=tinysrgb&w=800', category: 'Portraits', alt: 'Portrait session' },
-    { id: 5, src: 'https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800', category: 'Street', alt: 'Street photography' },
-    { id: 6, src: 'https://images.pexels.com/photos/1729931/pexels-photo-1729931.jpeg?auto=compress&cs=tinysrgb&w=800', category: 'Events', alt: 'Wedding photography' },
+    { id: 4, src: img4, category: 'Weddings', alt: 'Weddings photos' },
+    { id: 5, src: img5, category: 'Weddings', alt: 'Weddings photos' },
+    { id: 6, src: img6, category: 'Weddings', alt: 'Wedding photos' },
     { id: 7, src: 'https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=800', category: 'Street', alt: 'Urban photography' },
     { id: 8, src: 'https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&w=800', category: 'Portraits', alt: 'Fashion portrait' },
     { id: 9, src: 'https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=800', category: 'Landscapes', alt: 'Nature landscape' }
