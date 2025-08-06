@@ -73,7 +73,7 @@ const About = () => {
             <div className="space-y-4 text-gray-600 font-light leading-relaxed">
               <p>
                 Welcome to my world of photography. I'm a passionate photographer 
-                based in New York, dedicated to capturing the beauty and emotion 
+                based in Arani, dedicated to capturing the beauty and emotion 
                 in every moment. My journey began over five years ago with a simple 
                 camera and an insatiable curiosity about the world around me.
               </p>
